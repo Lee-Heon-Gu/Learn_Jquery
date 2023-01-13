@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #my-div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#my-div").css("backgroundColor", "red");
+        });
+        // $() - 함수로 document객체 선택, 접근
+        // ready함수를 걸었다.
+        // 익명함수, 즉시호출함수
+        // Specify a function to execute when the DOM is fully loaded.
+        // DOM이 완벽하게 로드되고 나서 실행할 함수를 특정한다.
+    </script>
+</head>
+<body>
+    <div id="my-div">내 div</div>
+</body>
+</html>
