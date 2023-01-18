@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #my-div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .my-red {
+            color: red;
+        }
+    </style>
+    <script>
+        function myFunc() {
+            // addClass()
+            $("#my-div").addClass("my-red");
+        };
+    </script>
+</head>
+<body>
+    <div id="my-div">JavaScript</div>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

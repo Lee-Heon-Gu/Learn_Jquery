@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #my-div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        function myFunc() {
+            // :lt, :gt
+            $("li:lt(3)").css("backgroundColor", "red"); // 전달받은 인덱스 보다 작은 인덱스 요소 모두 선택
+            $("li:gt(3)").css("backgroundColor", "blue"); // 전달받은 인덱스 보다 큰 인덱스 요소 모두 선택
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li id="li1">리스트1(index: 0)</li>
+        <li id="li2">리스트2(index: 1)</li>
+        <li id="li3">리스트3(index: 2)</li>
+        <li id="li4">리스트4(index: 3)</li>
+        <li id="li5">리스트5(index: 4)</li>
+        <li id="li6">리스트6(index: 5)</li>
+    </ul>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>
