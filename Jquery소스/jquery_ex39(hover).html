@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function () {
+            $("#btn").hover(
+                function () { // mouseenter시에
+                    $("#btn").parent().next().css("backgroundColor", "red");
+                },
+                function () { // mouseleave시에
+                    $("#btn").parent().next().css("backgroundColor", "blue");
+                }
+            );
+        });
+    </script>
+</head>
+<body>
+    <p>
+        <button id="btn">버튼</button>
+    </p> 
+    <p id="para">
+        내용
+    </p>
+</body>
+</html>
